@@ -102,11 +102,25 @@ main{
     }
     .s-3{
         text-align: center;
+
+        align-self: center;
+        justify-self: center;
         h2{
             font-weight: bold;
             font-size: 30px;
             margin:2em 0;
         } 
+
+        .services{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+
+            .itemServices{
+                img{
+                    border-radius: 100%;
+                }
+            }
+        }
     }
 
     .s-4{

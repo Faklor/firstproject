@@ -1,10 +1,18 @@
 import './main.scss'
+//import {useEffect, useState} from 'react'
 //------------res-------------
 import img1 from '../res/main-image1.jpg'
 import img2 from '../res/main-image2.jpg'
 import img3 from '../res/main-image3.jpg'
+//-----------dataJson----------
+import data from '../services/data.json'
 
 export default function Main(){
+    
+   
+
+   
+
     return(
         <main>
             <section className='s-1'>
@@ -34,7 +42,12 @@ export default function Main(){
             <section className='s-3'>
                 <h2>Какие сервисы мы предоставляем?</h2>
                 <div className='services'>
-                    
+                    {data.map((item, index)=>{
+                        return <div key={index} className={`itemServices ${index}`}>
+                            <img src={require(`../res/services/${item.img}`)} alt={`services ${index}`}/>
+                            <p>{item.name}</p>
+                        </div>
+                    })}
                 </div>
             </section>
 
@@ -60,6 +73,8 @@ export default function Main(){
                 </div>
                 <img src={img3} alt='MainImage_2'/>
             </section>
+
+            
         </main>
     )
 }
