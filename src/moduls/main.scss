@@ -115,13 +115,9 @@ main{
             display: grid;
             grid-template-columns: repeat(4,1fr);
 
-            .itemServices{
-                img{
-                    border-radius: 100%;
-                }
-            }
+            
         }
-    }
+    } 
 
     .s-4{
         display: grid;
@@ -131,8 +127,11 @@ main{
         img{
             align-self: center;
             justify-self: start;
-            width: 100%;
-            height: 70%;
+            // width: 100%;
+            // height: 70%;
+
+            width: 1000px;
+            height: 600px;
             object-fit: cover;
             left: -5em;
             position: relative;

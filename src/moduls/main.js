@@ -4,6 +4,8 @@ import './main.scss'
 import img1 from '../res/main-image1.jpg'
 import img2 from '../res/main-image2.jpg'
 import img3 from '../res/main-image3.jpg'
+//-----------pre-models--------
+import Link from './pre-moduls/link'
 //-----------dataJson----------
 import data from '../services/data.json'
 
@@ -42,11 +44,12 @@ export default function Main(){
             <section className='s-3'>
                 <h2>Какие сервисы мы предоставляем?</h2>
                 <div className='services'>
-                    {data.map((item, index)=>{
-                        return <div key={index} className={`itemServices ${index}`}>
-                            <img src={require(`../res/services/${item.img}`)} alt={`services ${index}`}/>
-                            <p>{item.name}</p>
-                        </div>
+                    {data.map((item, index)=>{ 
+                        // return <div key={index} className={`itemServices ${index}`}>
+                        //     <img src={require(`../res/services/${item.img}`)} alt={`services ${index}`}/>
+                        //     <p>{item.name}</p>
+                        // </div>
+                        return <Link  {...item} key={index}/>
                     })}
                 </div>
             </section>
