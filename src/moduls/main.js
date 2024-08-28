@@ -5,15 +5,11 @@ import img1 from '../res/main-image1.jpg'
 import img2 from '../res/main-image2.jpg'
 import img3 from '../res/main-image3.jpg'
 //-----------pre-models--------
-import Link from './pre-moduls/link'
-//-----------dataJson----------
-import data from '../services/data.json'
+import Services from './services'
+
 
 export default function Main(){
     
-   
-
-   
 
     return(
         <main>
@@ -41,34 +37,23 @@ export default function Main(){
 
             </section>
 
-            <section className='s-3'>
-                <h2>Какие сервисы мы предоставляем?</h2>
-                <div className='services'>
-                    {data.map((item, index)=>{ 
-                        // return <div key={index} className={`itemServices ${index}`}>
-                        //     <img src={require(`../res/services/${item.img}`)} alt={`services ${index}`}/>
-                        //     <p>{item.name}</p>
-                        // </div>
-                        return <Link  {...item} key={index}/>
-                    })}
-                </div>
-            </section>
+            <Services/>
 
-            <section className='s-4'>
+            <section className='s-4' >
                 
                 <div className='contact'>
                     <h2>Заполни форму<br/> и мы с тобой свяжемся</h2>
                     <form>
-                        <lable className='name'>Имя *<br/><input type='text'/></lable>
+                        <p className='name'>Имя *<br/><input type='text'/></p>
                         
 
-                        <lable className='familly'>Фамилия *<br/><input type='text'/></lable>
+                        <p className='familly'>Фамилия *<br/><input type='text'/></p>
                         
 
-                        <lable className='mail'>Электронная почта *<br/><input type='text'/></lable>
+                        <p className='mail'>Электронная почта *<br/><input type='text'/></p>
                         
 
-                        <lable className='text'>Сообщение<br/><textarea type='text'/></lable>
+                        <p className='text'>Сообщение<br/><textarea type='text'/></p>
                         
                         
                         <button>Связаться</button>

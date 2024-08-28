@@ -1,17 +1,17 @@
 import './App.scss'
-//------------moduls------------
-import Header from "./moduls/header";
-import Main from './moduls/main';
-import Footer from './moduls/footer';
+import { Outlet } from 'react-router'
+//----------moduls----------------
+import Header from './moduls/header'
+import Footer from './moduls/footer'
 
-function App() {
-  return (
-    <div className="App">
+export default function App() {
+  return <div className="App">
       <Header/>
-      <Main/>
+      <Outlet/>
       <Footer/>
+      
     </div>
-  );
+  
 }
 
-export default App;
+ 

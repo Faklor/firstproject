@@ -36,18 +36,22 @@ footer{
                 font-weight: normal;
             }
         }
-
-        img{
-            width: 2em;
-            height: 2em;
-            margin:0.2em 0;
-            
-            margin-bottom: 6em;
-            &:nth-child(2n){
-                margin-left: 0.7em;
+        .social{
+            display: flex;
+            gap:0.5em;
+            img{
+                width: 2em;
+                height: 2em;
+                margin:0.2em 0;
+                
+                margin-bottom: 6em;
+                &:nth-child(2n){
+                    margin-left: 0.7em;
+                }
+                
             }
-            
         }
+        
 
         a{
             display: block;

@@ -1,0 +1,141 @@
+.updateService{
+    display: grid;
+
+
+    input{
+        color: #4E586E;
+        border: none;
+        outline: 0;
+        box-shadow: 1px 2px 3px  1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 1em 1.5em;
+        margin:1em;
+        transition: 0.5s;
+        cursor: pointer;
+        &:focus{
+            background-color: #c2e7ff;       
+                   
+        }
+    }
+    button{
+        background-color: #c2e7ff; 
+        color: #4E586E;
+        cursor: pointer;
+
+        border: none;
+        outline: 0;
+        box-shadow: 1px 2px 3px  1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 1em 1.5em;
+        margin:1em;
+        transition: 0.5s;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+    .title{
+        margin:3em;
+        display: grid;
+        h2{
+    
+            color: #4E586E;
+        }
+        img{
+            justify-self: center;
+            border-radius: 100%;
+            margin:1em;
+            box-shadow: 1px 2px 3px  1px rgba(0, 0, 0, 0.25);
+            transition: 0.5s;
+            cursor: pointer;
+            width: 10em;
+            height: 10em;
+            object-fit: cover;
+            
+        }
+        input{
+            justify-self: center;
+            
+        }
+        button{
+            justify-self: center;
+           
+
+        }
+    }
+    .otherContent{
+        justify-self: center;
+
+        display: grid;
+        //width: 1100px;
+        img{
+            justify-self: center;
+            width: 100%;
+            height: 30em;
+            object-fit: cover;
+        }
+        textarea{
+            margin:2em 0;
+            justify-self: center;
+        }
+        button{
+            justify-self: center;
+
+        }
+        .addImg{
+            display: grid;
+            justify-self: center;
+            align-self: center;
+            cursor: pointer;
+
+            &:hover{
+                .btn{
+                    transform: scale(1.1);
+                }
+            }
+            .btn{
+                z-index: 1;
+                align-self: center;
+                justify-self: center;
+                //justify-self: center;
+                position: absolute;
+                cursor: pointer;
+
+
+            }
+            input{
+                //visibility: hidden;
+                //justify-self: center;
+                // position: relative;
+                //position: relative;
+                z-index: 2;
+                opacity: 0;
+            cursor: pointer;
+                
+
+            }
+
+        }
+        .file-input{
+            justify-self: center;   
+            color:#fff;
+           //visibility: hidden;
+            // &:before {
+            //     content: 'Добавить картинку';
+            //     display: inline-block;
+            //     background: #f0f0f0;
+            //     color:#000;
+            //     overflow: hidden;
+            //     /* Добавьте сюда стили по своему вкусу */
+            // }
+        }
+        button{
+            &:nth-child(2n+1){
+                background-color: #fff;
+                color: #4E586E;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

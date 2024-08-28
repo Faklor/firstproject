@@ -1,6 +1,6 @@
 {
   "name": "firstproject",
-  "homepage": "https://8eni.github.com/firstproject",
+  "homepage": "https://8eni.github.com/home",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,9 +39,13 @@
     ]
   },
   "devDependencies": {
+    "axios": "^1.7.5",
+    "formidable": "^3.5.1",
     "gh-pages": "^6.1.1",
+    "json-edit-react": "^1.15.9",
     "react-router": "^6.26.1",
     "react-router-dom": "^6.26.1",
+    "react-router-hash-link": "^2.4.3",
     "sass": "^1.77.8"
   }
 }

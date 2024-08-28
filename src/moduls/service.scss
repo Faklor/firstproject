@@ -1,0 +1,62 @@
+.service{
+    align-self: center;
+    justify-self: center;
+    margin:10em 0;
+
+    h2{
+        font-size: 53px;
+        font-weight: normal;
+    }
+
+    h3{
+        font-size: 22px;
+        font-weight: normal;
+        color: #DB0014;
+
+        
+        b{
+            letter-spacing: 0.2em;
+            margin-left: 0.3em;
+        }
+
+        
+    }
+
+    h4{
+        font-size: 17px;
+        font-weight: bold;
+        margin: 2em 0;
+    }
+
+    ul{
+        width: 40em;
+        font-size: 17px;
+        
+        li{
+            margin:0.2em 0;
+            list-style-type: none;
+        }
+    }
+
+    button{
+        transition: 0.5s;
+
+        width: 100%;
+        margin-top: 2em;
+        background-color: #DB0014;
+        color: #fff;
+        border:none;
+        outline: 0;
+        padding: 0.75em  1.25em;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 1px 2px 3px  1px rgba(0, 0, 0, 0.25);
+
+        &:hover{
+            color: #000;
+            background-color: transparent;
+
+        }
+    }
+}

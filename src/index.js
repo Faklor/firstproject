@@ -1,7 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//---------pages------------
+import App from './App'
+import ServicesPage from './pages/servicesPage';
+import HomePage from './pages/homePage';
+import ForInternationalStudents from './pages/for-international-students';
+import Admin from './pages/dashboard/admin';
+import AdminServices from './pages/dashboard/modulsServices/adminServices';
+import AdminBlog from './pages/dashboard/modulsBlog/adminBlog';
+
+//---------moduls-----------
+import Service from './moduls/service';
+import AdminService from  './pages/service';
+//import PrivateRoute from './pages/privateRoute'
+
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -12,7 +25,25 @@ import {
 
 const router = createBrowserRouter([
   { 
-    path:'/',element:<App/>
+    path:'/',element:<App/>, children:[
+      {path:'home', element:<HomePage/>},
+      {path:'services',element:<ServicesPage/>, children:[
+        {path:':servicesName',element:<Service/>}
+      ]},
+      {path:'for-international-students',element:<ForInternationalStudents/>},
+      {path:'about',element:<></>},
+      {path:'contact',element:<></>},
+      
+    
+    ]
+  },
+  {
+    path:'/admin', element:<Admin/>,children:[
+      {path:'services',element:<AdminServices/>,children:[
+        {path:':servicesName', element:<AdminService/>}
+      ]}, 
+      {path:'blog',element:<AdminBlog/>} 
+    ]
   }
 ])
 

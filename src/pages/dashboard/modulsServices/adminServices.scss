@@ -1,0 +1,38 @@
+.itemsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+
+    a{
+        text-decoration: none;
+        .block{
+            margin: 3em;
+            background-color: #f1f3f4;
+            
+            border-radius: 5px;
+            box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.25);
+            transition: 0.4s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            p{
+                font-size: 20px;
+                color: #4E586E;
+                padding: 1em;
+            }
+        }
+    }
+}
+
+.updateText{
+    background-color: #c2e7ff;
+    padding: 1em 0;
+    color: #4E586E;
+}

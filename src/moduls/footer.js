@@ -4,6 +4,8 @@ import inst from '../res/instagram.svg'
 import ytube from '../res/youtube.svg'
 
 export default function Footer(){
+
+
     return(
         <footer>
             <div className='content-1'>
@@ -13,11 +15,12 @@ export default function Footer(){
                 <h3>Thrive Educational Consulting</h3>
 
                 <h4>Контакты</h4>
-                <img src={inst} alt='contact'/>
-                <img src={ytube} alt='contact'/>
-
-                <a href='/'>info@karynausa-edu.com</a>
-                <a href='/'>Написать в WhatsApp</a>
+                <div className='social'>
+                    <a href='https://www.instagram.com/karynausa/'><img src={inst} alt='contact' /></a>
+                    <a href='https://www.youtube.com/@KarynaUSA'><img src={ytube} alt='contact' /></a>
+                </div>
+                <p >info@karynausa-edu.com</p>
+                <a href='https://api.whatsapp.com/message/MGQGJWGVAAXWD1?autoload=1&app_absent=0'>Написать в WhatsApp</a>
             </div>
             <div className='content-2'>
                 <h4>Навигация</h4>
