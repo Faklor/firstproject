@@ -130,10 +130,11 @@ export default function Service(){
                     // if(item.web){
                     //     return createElement(item.web.type, item.web.props)
                     // }
-                    if(item.web.type === 'img'){
+                    
+                    if(item.web.type === 'img' && !item.web.$$typeof){
                         return createElement(item.web.type,{src:require('../res/services/ContentServices/'+item.web.props.src)})
                     }
-                    return createElement(item.web.type)
+                    return createElement(item.web.type, item.web.props)
                     //return createElement(item.web.type, item.web.props) || createElement(item.type,item.props)
                     //return createElement(item.type,item.props)
                 })}
